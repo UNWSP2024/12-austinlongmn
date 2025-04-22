@@ -69,7 +69,7 @@ class MPGCalculator:
 
             mpg = num_miles / gallons
 
-            tkinter.messagebox.showinfo(title="MPG", message=f"You will get {mpg} MPG")
+            tkinter.messagebox.showinfo(title="MPG", message=f"You will get {mpg:.2f} MPG")
         except ValueError:
             tkinter.messagebox.showerror(
                 title="Invalid input",
